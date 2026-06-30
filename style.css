@@ -21,7 +21,7 @@ nav{
     align-items:center;
     padding: 20px 40px
 }
-ul{
+nav ul{
     display:flex;
     gap: 30px;
     list-style: none;
@@ -86,4 +86,8 @@ button{
     width:700px;
     padding:0px;
     margin-top:15px;
+}
+#Contact ul{
+    display:flex;
+    list-style:none;
 }
