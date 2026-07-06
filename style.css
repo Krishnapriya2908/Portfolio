@@ -43,12 +43,12 @@ a:hover{
     border-radius:8px;
 }
 section{
-    height:100vh;
+
     padding:40px;
 }
 #home{
-    padding:120px 40px;
-     padding-top: 80px;
+    padding:80px 40px;
+    
 }
 p{
     color: peru;
@@ -69,7 +69,9 @@ button{
     cursor: pointer;
 }
 .hero-content{
-    padding: 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
 }
 .project-card{
     margin-bottom: 40px;
@@ -89,22 +91,21 @@ button{
 #Education h2{
     margin-bottom:25px;
 }
-#About p{
-    width:700px;
-    padding:0px;
-    margin-top:15px;
-}
+
 #Contact ul{
     display:flex;
     list-style:none;
 }
-.Hero-content img{
-    width:180px;
-    height:180px;
+.hero-content img{
+    width:280px;
+    height:280px;
     margin-top:20px;
     margin-bottom:20px;
+    margin-left:100px;
     border-radius:50%;
     object-fit:cover;
+   
+
 }
 html{
     scroll-behavior: smooth;
@@ -130,4 +131,75 @@ html{
         gap:15px;
     }
 
+}
+.profile-container{
+    width: 340px;
+    height: 340px;
+    background-color: #d8b88a;   /* choose any accent color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.hero-buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.about-card{
+    background-color:azure;
+    border-radius: 20px;
+    padding: 30px;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.about-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+.info-box{
+    flex:1;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-text{
+    width:700px;
+    margin-top:15px;
+    padding:0px;
+}
+.info-box:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+nav a{
+    position: relative;
+    text-decoration: none;
+    padding: 8px 0;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: peru;
+    transition: width 0.3s ease;
+}
+nav a:hover::after{
+    width: 100%;
 }
