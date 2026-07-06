@@ -19,7 +19,13 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding: 20px 40px
+    padding: 20px 40px;
+    position:Sticky;
+    top:0;
+    background-color: bisque;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index:100;
+
 }
 nav ul{
     display:flex;
@@ -42,6 +48,7 @@ section{
 }
 #home{
     padding:120px 40px;
+     padding-top: 80px;
 }
 p{
     color: peru;
@@ -90,4 +97,37 @@ button{
 #Contact ul{
     display:flex;
     list-style:none;
+}
+.Hero-content img{
+    width:180px;
+    height:180px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border-radius:50%;
+    object-fit:cover;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@media (max-width:768px){
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .projects-container{
+        flex-direction:column;
+    }
+
+    .hero-content img{
+        width:140px;
+        height:140px;
+    }
+
+    nav ul{
+        gap:15px;
+    }
+
 }
