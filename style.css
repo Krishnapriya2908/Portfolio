@@ -203,3 +203,8 @@ nav a::after{
 nav a:hover::after{
     width: 100%;
 }
+.edu-container{
+    border-radius:90%;
+    
+
+}
